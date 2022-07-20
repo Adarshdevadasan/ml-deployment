@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyphosis PREDICTION</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body background="../static/images/background1.jpg">
+    <div class="input form">
+        <form action="{{url_for('predict')}}" method="post" id="input head">
+
+            <option value="1">Age</option>
+            <option value="2">Number</option>
+            <option value="3">Start</option><br><br>
+            <h3 id="input">Age</h3>
+            <input type="text" name="age" placeholder="Age">
+            <br>
+            <h3 id="input">Number</h3>
+            <input type="text" name="Number" placeholder="Number">
+            <br>
+            <h3 id="input">Start</h3>
+            <input type="text" name="Start" placeholder="Start">
+            <br>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+
+    </div>
+
+</body>
+
+</html>
